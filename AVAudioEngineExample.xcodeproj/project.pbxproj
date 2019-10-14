@@ -7,16 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F02F9772354812900FD5B0C /* silence.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9F02F9762354812900FD5B0C /* silence.mp3 */; };
+		9F0F79DB2347476F00D744B3 /* example.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9F0F79DA2347476E00D744B3 /* example.mp3 */; };
+		9FE658A4234D0C9D0004BF01 /* AudioBufferList.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE658A3234D0C9D0004BF01 /* AudioBufferList.m */; };
 		9FFE838C2341F08C0087342F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFE838B2341F08C0087342F /* AppDelegate.swift */; };
 		9FFE838E2341F08C0087342F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFE838D2341F08C0087342F /* SceneDelegate.swift */; };
 		9FFE83902341F08C0087342F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFE838F2341F08C0087342F /* ViewController.swift */; };
 		9FFE83932341F08C0087342F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FFE83912341F08C0087342F /* Main.storyboard */; };
 		9FFE83952341F08F0087342F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FFE83942341F08F0087342F /* Assets.xcassets */; };
 		9FFE83982341F08F0087342F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FFE83962341F08F0087342F /* LaunchScreen.storyboard */; };
-		9FFE83A4234276570087342F /* example.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 9FFE83A3234276570087342F /* example.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F02F9762354812900FD5B0C /* silence.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = silence.mp3; sourceTree = "<group>"; };
+		9F0F79DA2347476E00D744B3 /* example.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = example.mp3; sourceTree = "<group>"; };
+		9FE6589F234D0C260004BF01 /* AudioBufferList.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.objc; fileEncoding = 4; path = AudioBufferList.h; sourceTree = "<group>"; };
+		9FE658A2234D0C9D0004BF01 /* AVAudioEngineExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AVAudioEngineExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		9FE658A3234D0C9D0004BF01 /* AudioBufferList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioBufferList.m; sourceTree = "<group>"; };
 		9FFE83882341F08C0087342F /* AVAudioEngineExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVAudioEngineExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FFE838B2341F08C0087342F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9FFE838D2341F08C0087342F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -25,7 +32,6 @@
 		9FFE83942341F08F0087342F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9FFE83972341F08F0087342F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FFE83992341F08F0087342F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9FFE83A3234276570087342F /* example.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = example.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +70,12 @@
 				9FFE83912341F08C0087342F /* Main.storyboard */,
 				9FFE83942341F08F0087342F /* Assets.xcassets */,
 				9FFE83962341F08F0087342F /* LaunchScreen.storyboard */,
-				9FFE83A3234276570087342F /* example.mp4 */,
+				9F02F9762354812900FD5B0C /* silence.mp3 */,
 				9FFE83992341F08F0087342F /* Info.plist */,
+				9F0F79DA2347476E00D744B3 /* example.mp3 */,
+				9FE6589F234D0C260004BF01 /* AudioBufferList.h */,
+				9FE658A3234D0C9D0004BF01 /* AudioBufferList.m */,
+				9FE658A2234D0C9D0004BF01 /* AVAudioEngineExample-Bridging-Header.h */,
 			);
 			path = AVAudioEngineExample;
 			sourceTree = "<group>";
@@ -102,6 +112,7 @@
 				TargetAttributes = {
 					9FFE83872341F08C0087342F = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -128,9 +139,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FFE83A4234276570087342F /* example.mp4 in Resources */,
 				9FFE83982341F08F0087342F /* LaunchScreen.storyboard in Resources */,
 				9FFE83952341F08F0087342F /* Assets.xcassets in Resources */,
+				9F02F9772354812900FD5B0C /* silence.mp3 in Resources */,
+				9F0F79DB2347476F00D744B3 /* example.mp3 in Resources */,
 				9FFE83932341F08C0087342F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FE658A4234D0C9D0004BF01 /* AudioBufferList.m in Sources */,
 				9FFE83902341F08C0087342F /* ViewController.swift in Sources */,
 				9FFE838C2341F08C0087342F /* AppDelegate.swift in Sources */,
 				9FFE838E2341F08C0087342F /* SceneDelegate.swift in Sources */,
@@ -288,6 +301,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D97V4W8497;
 				INFOPLIST_FILE = AVAudioEngineExample/Info.plist;
@@ -297,6 +311,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.swinxteam.AVAudioEngineExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AVAudioEngineExample/AVAudioEngineExample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -306,6 +322,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D97V4W8497;
 				INFOPLIST_FILE = AVAudioEngineExample/Info.plist;
@@ -315,6 +332,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.swinxteam.AVAudioEngineExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AVAudioEngineExample/AVAudioEngineExample-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
